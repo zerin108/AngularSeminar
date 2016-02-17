@@ -16,6 +16,11 @@
         resolve: {
           myResolve: function(){
             console.log(1);
+          },
+          isGranted: function(permissionService){
+
+            //реализуем permission
+            return permissionService/*.isGrantedAccesToAdmin()  */;
           }
     }
       });
