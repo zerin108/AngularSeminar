@@ -1,3 +1,6 @@
+To start: 
+$ gulp serve
+
 Должны быть установленны глобально yo, gulp, bower, gulp-generator-angular.
 gulp-generator-angular === git://github.com/
 
@@ -15,6 +18,10 @@ Browser sync лежит на порту port + 1: 3001.
 angular-permission
 ui-router-extras - дополнение к ui-router. Сохраняет state и помнит где мы были.
 
+
+Факты:
+1. Директивы привязанны к DOM. Невозможно существования двух директив на одном элементе.
+2. 
 
 Правила хорошего тона:
 Если пользователю что-то заапрещенно, отпрваить его на логин.

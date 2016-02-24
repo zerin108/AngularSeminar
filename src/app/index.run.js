@@ -11,10 +11,10 @@
     //прикручиваем permission
     //плюсы данного решения: возможность прикрутить быстро, минусы: делается исключительно синхронно.
 
-    $rootScope.$on('$stateChangeStart', function(e, toState, toParams){
+    $rootScope.$on('$stateChangeStart', function(e){
       //проверяем, есть ли у пользователя право попасть сюда.
       //если нет, то код ниже
-      e.preventDefault();
+      //e.preventDefault();
     });
     $rootScope.$on('$stateChangeError', function(){
 

@@ -12,17 +12,8 @@
         url: '/',
         templateUrl: 'app/main/main.html',
         controller: 'MainController',
-        controllerAs: 'main',
-        resolve: {
-          myResolve: function(){
-            console.log(1);
-          },
-          isGranted: function(permissionService){
+        controllerAs: 'main'
 
-            //реализуем permission
-            return permissionService/*.isGrantedAccesToAdmin()  */;
-          }
-    }
       });
 
     $urlRouterProvider.otherwise('/');
